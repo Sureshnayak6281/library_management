@@ -1,0 +1,19 @@
+/* .button-container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+} */
+
+.login-card {
+    
+    background-color: #ffffff;
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+
+.bg-image-left {
+    background-size: cover;
+    background-position: left;
+}
+
+

@@ -1,0 +1,27 @@
+ <form [formGroup]="editform" (ngSubmit)="submitcreateauthur()" class="example-form">
+  <h1 class="d-flex justify-content-center mb-2 mt-4">Create Author</h1>
+  <div class="d-flex justify-content-center mb-3 mt-3">
+  <mat-form-field appearance="fill" class="w-75">
+    <mat-label>Author Name</mat-label>
+    <input matInput placeholder="Enter Author Name" formControlName="Authur_name">
+  </mat-form-field>
+</div>
+
+  <div class="d-flex justify-content-center mb-3">
+  <mat-form-field appearance="fill" class="w-75">
+    <mat-label>User Name</mat-label>
+    <input matInput placeholder="Enter User Name" formControlName="User_name">
+  </mat-form-field>
+</div>
+
+<div class="d-flex justify-content-center mb-3">
+  <mat-form-field appearance="fill" class="w-75">
+    <mat-label>Email</mat-label>
+    <input matInput type="email" placeholder="Enter Email" formControlName=''>
+  </mat-form-field>
+</div>
+<div  class="d-flex justify-content-center mb-3">
+  <button mat-raised-button color="primary">Submit</button>
+</div>
+
+</form>

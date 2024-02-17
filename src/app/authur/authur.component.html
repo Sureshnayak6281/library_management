@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+      <div class="col-8">
+        <form class="example-form">
+          <mat-form-field class="w-100 small clr-input mt-5" appearance="outline">
+            <mat-label>Search by Name</mat-label>
+            <input matInput [formControl]="searchRequestCtrl">
+            <span matPrefix>
+              <mat-icon color="primary" class="mr-3">search</mat-icon>
+            </span>
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="col-4 d-flex justify-content-end">
+        <button type="button" class="btn btn-outline-success mt-5" style="height: 50px;" (click) = creatauthur()>Create authur</button>
+      </div>
+    </div>
+  </div>
+  
+
+
+<div class= "container">
+<app-global-table [authurdata]= "data" [displayedColumns]="displayedColumns" [total] ='total'
+(pageChanged)="onPageChanged($event)"></app-global-table>
+</div>
