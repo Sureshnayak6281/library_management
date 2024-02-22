@@ -5,6 +5,7 @@ import { AuthurRoutingModule } from './authur-routing.module';
 import { AuthurComponent } from './authur.component';
 import { SharedModule } from '../shared/shared.module';
 import { CreateupdateauthurComponent } from './createupdateauthur/createupdateauthur.component';
+import { BooksComponent } from './books/books.component';
 
 
 
@@ -13,7 +14,8 @@ import { CreateupdateauthurComponent } from './createupdateauthur/createupdateau
 @NgModule({
   declarations: [
     AuthurComponent,
-    CreateupdateauthurComponent
+    CreateupdateauthurComponent,
+    BooksComponent
   ],
   imports: [
     CommonModule,

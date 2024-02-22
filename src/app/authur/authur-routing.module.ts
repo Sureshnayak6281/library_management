@@ -4,6 +4,7 @@ import { AuthurComponent } from './authur.component';
 
 const routes: Routes = [{ path: '', component: AuthurComponent }];
 
+
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]

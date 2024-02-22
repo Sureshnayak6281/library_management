@@ -15,6 +15,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatIconModule} from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
+import{MatSidenavModule} from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 
@@ -27,10 +30,13 @@ import { MatDialogModule } from '@angular/material/dialog';
   ],
   imports: [
     CommonModule,
+    MatListModule,
     MatIconModule,
     MatDialogModule,
+    MatSidenavModule,
     ReactiveFormsModule,
     MatInputModule,
+    MatToolbarModule,
     MatFormFieldModule,
     MatButtonModule,
     MatCardModule,
@@ -38,7 +44,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     HttpClientModule,
     MatSnackBarModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    
     
     
     
@@ -50,11 +57,13 @@ import { MatDialogModule } from '@angular/material/dialog';
   exports: [
     CommonModule,
     FormsModule,
+    MatListModule,
     CommonModule,
     MatDialogModule,
     HttpClientModule,
     ReactiveFormsModule,
     MatInputModule,
+    MatToolbarModule,
     MatFormFieldModule,
     MatButtonModule,
     MatCardModule,
@@ -62,7 +71,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     AuthanticationRoutingModule,
     MatSnackBarModule,
     GlobalTableComponent,
-    MatTableModule
+    MatTableModule,
+    MatSidenavModule
   ],
 })
 export class SharedModule {}

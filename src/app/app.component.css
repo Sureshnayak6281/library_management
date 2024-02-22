@@ -1,0 +1,12 @@
+mat-sidenav {
+    width: 260px;
+    max-width: 260px;
+}
+
+.header-drawer-content {
+    left: 0;
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

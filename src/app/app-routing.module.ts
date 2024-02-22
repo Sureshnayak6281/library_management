@@ -19,6 +19,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./authur/authur.module').then((m) => m.AuthurModule),
   },
+  // {
+  //   path: 'books',
+  //   component: BooksComponent,
+  //   canActivate: [AuthGuard]
+  // },
 ];
 
 @NgModule({

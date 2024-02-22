@@ -13,13 +13,28 @@ export class LoginService {
 
   constructor(private http: HttpClient ) { }
 
-  public login(email: string, password:string, phone:string ): Observable<any> {
+  public login(phone:string ): Observable<any> {
    
     let body: HttpParams = new HttpParams();
     // body = body.append('email', email);
     // body = body.append('password',password);
-    body = body.append('phone',phone);
+    body = body.append('mobile',phone);
     return this.http.post(`http://localhost/library_management/register.php`, body)
+      .pipe(
+        map((res: any) => {
+          return res;
+          
+          
+        }),
+        // catchError(this.errorHandler.handleError)
+      );
+  }
+
+  public verifyotp(otp:string ): Observable<any> {
+   
+    let body: HttpParams = new HttpParams();
+    body = body.append('otp',otp);
+    return this.http.post(`http://localhost/library_management/verify.php`, body)
       .pipe(
         map((res: any) => {
           return res;

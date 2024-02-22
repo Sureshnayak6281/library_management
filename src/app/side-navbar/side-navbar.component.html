@@ -1,0 +1,14 @@
+
+<mat-list [style.cursor]="'pointer'" class="nunito">
+  <i class="fa-regular fa-circle-xmark d-flex justify-content-end mt-2 mx-2"
+    style="font-size: 1.25rem; color: rgb(213, 12, 12);" (click)="close()"></i>  
+    <mat-list-item matRipple [routerLink]="['/authur']" routerLinkActive="active-link" class="mt-5">
+    <i class="fa-solid fa-person"></i><span class="mx-2 person">Authur</span>
+  </mat-list-item>
+  <mat-list-item matRipple [routerLink]="['/books']" routerLinkActive="active-link">
+    <i class="fa-solid fa-book"></i><span class="mx-2 person">Books</span>
+  </mat-list-item>
+  <mat-list-item matRipple [routerLink]="['/logout']" routerLinkActive="active-link">
+    <i class="fa-solid fa-right-from-bracket"></i><span class="mx-2 person">Log-out</span>
+  </mat-list-item>
+</mat-list>
